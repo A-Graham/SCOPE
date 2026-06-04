@@ -1,6 +1,8 @@
 # SCOPE: Symmetric COvariance Population Estimator
 
-SCOPE is a hierarchical Bayesian framework for fitting a linear scaling relation between two observed quantities while fully accounting for:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20536917.svg)](https://doi.org/10.5281/zenodo.20536917)
+
+**SCOPE** is a hierarchical Bayesian regression framework implemented in R and Stan for fitting a linear scaling relation between two observed quantities while fully accounting for:
 
 - Measurement uncertainties in **both** variables  
 - Asymmetric (skewed) measurement errors  

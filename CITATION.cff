@@ -11,6 +11,11 @@ version: 1.0.0
 date-released: 2026-06-04
 license: MIT
 repository-code: "https://github.com/A-Graham/SCOPE"
+doi: "10.5281/zenodo.20536917"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20536917"
+    description: "Zenodo archive"
 abstract: >
   SCOPE (Symmetric COvariance Population Estimator) is a hierarchical Bayesian
   regression framework implemented in R and Stan. It fits a linear scaling
