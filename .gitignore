@@ -1,0 +1,20 @@
+# ---- Derived outputs (regenerated each run) ----
+Scout.dat
+SCOPE_fit.pdf
+
+# ---- Stan compiled model cache (machine specific) ----
+Scoped.rds
+
+# ---- R session files ----
+.Rhistory
+.RData
+.Rproj.user/
+
+# ---- OS metadata ----
+.DS_Store
+Thumbs.db
+
+# ---- CmdStan / Stan temporary files ----
+*.o
+*.so
+*.dll

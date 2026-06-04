@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use SCOPE in published work, please cite both the software release and the associated paper below."
+type: software
+title: "SCOPE: Symmetric COvariance Population Estimator"
+authors:
+  - family-names: Graham
+    given-names: Alister W.
+    affiliation: "Centre for Astrophysics and Supercomputing, Swinburne University of Technology"
+    orcid: "https://orcid.org/0000-0002-6496-9414"
+version: 1.0.0
+date-released: 2026-06-04
+license: MIT
+repository-code: "https://github.com/A-Graham/SCOPE"
+abstract: >
+  SCOPE (Symmetric COvariance Population Estimator) is a hierarchical Bayesian
+  regression framework implemented in R and Stan. It fits a linear scaling
+  relation between two observed quantities while fully accounting for
+  measurement uncertainties in both variables, including asymmetric
+  uncertainties modelled via a skew-normal approximation. The regression slope
+  is derived from the intrinsic population covariance
+  (beta = rho * sigma_y / sigma_x), treating both variables symmetrically
+  during fitting. The method is designed for astrophysical scaling relations
+  but is applicable to any two-variable relation with measurement uncertainty
+  in both coordinates.
+keywords:
+  - astronomy
+  - astrophysics
+  - Bayesian inference
+  - hierarchical modelling
+  - regression
+  - Stan
+  - scaling relations
+  - black holes
+preferred-citation:
+  type: article
+  title: "Galaxy morphology dependent (black hole mass)-(velocity dispersion) relations: implications for gravitational wave forecasts and cosmological simulations"
+  authors:
+    - family-names: Graham
+      given-names: Alister W.
+  journal: "Monthly Notices of the Royal Astronomical Society"
+  year: 2026
+  notes: "Submitted; DOI to be assigned upon acceptance"
