@@ -46,7 +46,7 @@ $$\sigma_{Y|X} = \sigma_Y \sqrt{1 - \rho^2}$$
 
 ## Symmetry of the Model
 
-A known failure of one-sided conditional estimators (e.g. ordinary least squares or standard conditional Bayesian fits) is **directional bias**: fitting $Y$ on $X$ yields a slope $\beta_1$, whereas fitting $X$ on $Y$ yields a slope $\beta_2$ whose reciprocal does not match ($1/\beta_2 \neq \beta_1$). This discrepancy ($\Delta\beta$) is often as large as the $1\sigma$ uncertainty on the slope itself.
+A feature of one-sided conditional estimators (e.g. ordinary least squares or standard conditional Bayesian fits) is **directional bias**: fitting $Y$ on $X$ yields a slope $\beta_1$, whereas fitting $X$ on $Y$ yields a slope $\beta_2$ whose reciprocal does not match ($1/\beta_2 \neq \beta_1$). This discrepancy ($\Delta\beta$) is often as large as the $1\sigma$ uncertainty on the slope itself.
 
 **SCOPE resolves this by fitting the joint 2D intrinsic population distribution.**
 
