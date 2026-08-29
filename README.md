@@ -1,15 +1,22 @@
 # SCOPE: Symmetric COvariance Population Estimator
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20536917.svg)](https://doi.org/10.5281/zenodo.20536917)
+[![arXiv](https://img.shields.io/badge/arXiv-2606.05808-b31b1b.svg)](https://arxiv.org/abs/2606.05808)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **SCOPE** is a hierarchical Bayesian regression framework implemented in R and Stan for fitting a linear scaling relation between two observed quantities while fully accounting for:
 
-- Measurement uncertainties in **both** variables  
-- Asymmetric (skewed) measurement errors  
-- Intrinsic population covariance  
-- Intrinsic conditional scatter  
+* Measurement uncertainties in **both** variables
+* Asymmetric (skewed) measurement errors
+* Intrinsic population covariance
+* Intrinsic conditional scatter
 
-The regression slope is derived from the **intrinsic population covariance**, not from a one-sided conditional regression.
+The regression slope is derived from the **intrinsic population covariance**, avoiding the bias that arises in ordinary least squares when measurement errors in the independent variable are ignored.
+
+Companion software for:
+> **Alister W. Graham (2026)**  
+> *"Galaxy morphology dependent (black hole mass)-(velocity dispersion) relations: implications for gravitational wave forecasts and cosmological simulations"*  
+> **arXiv:2606.05808 [astro-ph.GA]** -- [https://arxiv.org/abs/2606.05808](https://arxiv.org/abs/2606.05808)
 
 ---
 
@@ -17,44 +24,23 @@ The regression slope is derived from the **intrinsic population covariance**, no
 
 SCOPE models the intrinsic population as a bivariate normal distribution:
 
-$$
-(X, Y) \sim \mathcal{N}
-\left(
-\begin{bmatrix}
-\mu_X \\
-\mu_Y
-\end{bmatrix},
-\Sigma
-\right)
-$$
+$$(X, Y) \sim \mathcal{N}\left(\begin{bmatrix} \mu_X \\ \mu_Y \end{bmatrix}, \Sigma\right)$$
 
-with:
+with covariance matrix:
 
-$$
-\Sigma =
-\begin{bmatrix}
-\sigma_X^2 & \rho \sigma_X \sigma_Y \\
-\rho \sigma_X \sigma_Y & \sigma_Y^2
-\end{bmatrix}
-$$
+$$\Sigma = \begin{bmatrix} \sigma_X^2 & \rho \sigma_X \sigma_Y \\ \rho \sigma_X \sigma_Y & \sigma_Y^2 \end{bmatrix}$$
 
 The reported regression slope is derived from the intrinsic covariance:
 
-$$
-\beta = \rho \frac{\sigma_Y}{\sigma_X}
-$$
+$$\beta = \rho \frac{\sigma_Y}{\sigma_X}$$
 
 The linear relation is expressed in pivoted form:
 
-$$
-Y = \mu_Y + \beta (X - \mu_X)
-$$
+$$Y = \mu_Y + \beta (X - \mu_X)$$
 
 The conditional intrinsic scatter is:
 
-$$
-\sigma_{Y|X} = \sigma_Y \sqrt{1 - \rho^2}
-$$
+$$\sigma_{Y|X} = \sigma_Y \sqrt{1 - \rho^2}$$
 
 ---
 
@@ -233,15 +219,32 @@ Alister W. Graham
 
 If you use SCOPE in published work, please cite:
 
-Graham, A. W. (2026). SCOPE: Symmetric COvariance Population Estimator.
-Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
+```bibtex
+@MISC{Graham2026_SCOPE_software,
+       author = {{Graham}, Alister W.},
+        title = "{SCOPE: Symmetric COvariance Population Estimator}",
+         year = 2026,
+        month = jun,
+          doi = {10.5281/zenodo.20536917},
+    publisher = {Zenodo},
+          url = {https://doi.org/10.5281/zenodo.20536917}
+}
 
-ORCID: https://orcid.org/0000-0002-6496-9414
-
-and cite the associated peer-reviewed publication once available:
-
-*Galaxy morphology dependent (black hole mass)-(velocity dispersion) relations:
-implications for gravitational wave forecasts and cosmological simulations*
+@ARTICLE{Graham2026_SCOPE_paper,
+       author = {{Graham}, Alister W.},
+        title = "{Galaxy morphology dependent (black hole mass)-(velocity dispersion) relations: implications for gravitational wave forecasts and cosmological simulations}",
+      journal = {arXiv e-prints},
+     keywords = {Astrophysics - Astrophysics of Galaxies},
+         year = 2026,
+        month = jun,
+          eid = {arXiv:2606.05808},
+        pages = {arXiv:2606.05808},
+archivePrefix = {arXiv},
+       eprint = {2606.05808},
+ primaryClass = {astro-ph.GA},
+          url = {https://arxiv.org/abs/2606.05808}
+}
+```
 
 The latest citation information is provided in CITATION.cff 
 in the GitHub repository.

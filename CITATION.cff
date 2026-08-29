@@ -7,7 +7,7 @@ authors:
     given-names: Alister W.
     affiliation: "Centre for Astrophysics and Supercomputing, Swinburne University of Technology"
     orcid: "https://orcid.org/0000-0002-6496-9414"
-version: 1.0.0
+version: "1.0.0"
 date-released: 2026-06-04
 license: MIT
 repository-code: "https://github.com/A-Graham/SCOPE"
@@ -42,6 +42,9 @@ preferred-citation:
   authors:
     - family-names: Graham
       given-names: Alister W.
+      affiliation: "Centre for Astrophysics and Supercomputing, Swinburne University of Technology"
+      orcid: "https://orcid.org/0000-0002-6496-9414"
   journal: "Monthly Notices of the Royal Astronomical Society"
   year: 2026
-  notes: "Submitted; DOI to be assigned upon acceptance"
+  url: "https://arxiv.org/abs/2606.05808"
+  notes: "Submitted; arXiv:2606.05808 [astro-ph.GA]"
