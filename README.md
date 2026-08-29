@@ -46,14 +46,21 @@ $$\sigma_{Y|X} = \sigma_Y \sqrt{1 - \rho^2}$$
 
 ## Symmetry of the Model
 
-The model treats X and Y symmetrically during fitting by modelling their **joint intrinsic distribution**.
+A known failure of one-sided conditional estimators (e.g. ordinary least squares or standard conditional Bayesian fits) is **directional bias**: fitting $Y$ on $X$ yields a slope $\beta_1$, whereas fitting $X$ on $Y$ yields a slope $\beta_2$ whose reciprocal does not match ($1/\beta_2 \neq \beta_1$). This discrepancy ($\Delta\beta$) is often as large as the $1\sigma$ uncertainty on the slope itself.
 
-The reported slope corresponds to the conditional slope of **Y given X**.  
-If X and Y are swapped, the fitted intrinsic covariance structure is
-unchanged, but the reported slope then describes the new Y given the
-new X — i.e. the conditional slope in the other direction.
+**SCOPE resolves this by fitting the joint 2D intrinsic population distribution.**
 
-This avoids the bias that arises in ordinary least squares when measurement errors in X are ignored.
+Because the regression parameters are derived directly from the underlying intrinsic covariance matrix $\Sigma$:
+
+$$\beta_{Y|X} = \rho \frac{\sigma_Y}{\sigma_X} \qquad \text{and} \qquad \beta_{X|Y} = \rho \frac{\sigma_X}{\sigma_Y}$$
+
+the model mathematically guarantees exact directional invariance:
+
+$$\beta_{Y|X} \equiv \frac{1}{\beta_{X|Y}}$$
+
+across **every single MCMC posterior draw**. 
+
+Whether a user assigns a physical quantity to the $X$-axis or the $Y$-axis, the fitted intrinsic relation describes the exact same physical line in parameter space without regression dilution or axis-dependent bias.
 
 ---
 
