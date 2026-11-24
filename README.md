@@ -15,8 +15,10 @@ The regression slope is derived from the **intrinsic population covariance**, av
 
 Companion software for:
 > **Alister W. Graham (2026)**  
-> *"Galaxy morphology dependent (black hole mass)-(velocity dispersion) relations: implications for gravitational wave forecasts and cosmological simulations"*  
-> **arXiv:2606.05808 [astro-ph.GA]** -- [https://arxiv.org/abs/2606.05808](https://arxiv.org/abs/2606.05808)
+> *"Galaxy morphology-dependent (black hole mass)-(velocity dispersion) relations: implications for gravitational wave forecasts and cosmological simulations"*
+> **Monthly Notices of the Royal Astronomical Society, 552**, 1–28 (2026).  
+> [https://doi.org/10.1093/mnras/stag1799](https://doi.org/10.1093/mnras/stag1799)  
+> Preprint: [arXiv:2606.05808](https://arxiv.org/abs/2606.05808)
 
 ---
 
@@ -238,18 +240,19 @@ If you use SCOPE in published work, please cite:
 }
 
 @ARTICLE{Graham2026_SCOPE_paper,
-       author = {{Graham}, Alister W.},
-        title = "{Galaxy morphology dependent (black hole mass)-(velocity dispersion) relations: implications for gravitational wave forecasts and cosmological simulations}",
-      journal = {arXiv e-prints},
-     keywords = {Astrophysics - Astrophysics of Galaxies},
-         year = 2026,
-        month = jun,
-          eid = {arXiv:2606.05808},
-        pages = {arXiv:2606.05808},
-archivePrefix = {arXiv},
-       eprint = {2606.05808},
- primaryClass = {astro-ph.GA},
-          url = {https://arxiv.org/abs/2606.05808}
+  author  = {{Graham}, Alister W.},
+  title   = "{Galaxy morphology-dependent (black hole mass)--(velocity dispersion) relations: implications for gravitational-wave forecasts and cosmological simulations}",
+  journal = {Monthly Notices of the Royal Astronomical Society},
+  year    = 2026,
+  volume  = 552,
+  number  = 4,
+  pages   = {1--28},
+  eid     = {stag1799},
+  doi     = {10.1093/mnras/stag1799},
+  archivePrefix = {arXiv},
+  eprint  = {2606.05808},
+  primaryClass = {astro-ph.GA},
+  url     = {https://doi.org/10.1093/mnras/stag1799}
 }
 ```
 

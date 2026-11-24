@@ -8,6 +8,12 @@ MAJOR.MINOR.PATCH, where MAJOR = breaking change, MINOR = new feature,
 PATCH = bug fix or documentation update.
 
 ---
+## [1.0.1] — 2026-11-24
+
+### Documentation
+- Updated publication details in README.md, CITATION.cff, and SCOPE.R to reflect the publication of the associated paper in Monthly Notices of the Royal Astronomical Society.
+- Added the published article DOI and retained the arXiv preprint reference.
+- Updated software version information for the 1.0.1 release.
 
 ## [1.0.0] — 2026-03-08
 

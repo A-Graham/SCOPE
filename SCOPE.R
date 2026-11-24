@@ -1,7 +1,7 @@
 ############################################################
 # SCOPE: Symmetric COvariance Population Estimator
 # A hierarchical Bayesian regression model implemented in Stan
-# Version 1.0.0
+# Version 1.0.1
 # Author: Alister W. Graham (2026)
 # Repository: https://github.com/A-Graham/SCOPE
 #
@@ -60,21 +60,26 @@
 ############################################################
 # CITATION
 #
-# If you use SCOPE in published work, please cite both 
+# If you use SCOPE in published work, please cite both
 # the following paper that describes the code:
 #
 # Graham, A. W. (2026),
-# "Galaxy morphology dependent (black hole mass)-(velocity
-#  dispersion) relations: implications for gravitational
-#  wave forecasts and cosmological simulations", 
-# Monthly Notices of the Royal Astronomical Society, submitted
-# https://doi.org/10.1093/mnras/(to be assigned)
+# "Galaxy morphology-dependent (black hole mass)-(velocity
+#  dispersion) relations: implications for gravitational-wave
+#  forecasts and cosmological simulations",
+# Monthly Notices of the Royal Astronomical Society,
+# 552(4), stag1799.
+# https://doi.org/10.1093/mnras/stag1799
+#
+# The preprint is available at:
+# https://arxiv.org/abs/2606.05808
 #
 # and the SCOPE software release:
 #
 # Graham, A. W. (2026),
 # SCOPE: Symmetric COvariance Population Estimator,
-# Zenodo DOI: (to be assigned)
+# Zenodo.
+# https://doi.org/10.5281/zenodo.20536917
 #
 # The latest citation information is provided in CITATION.cff
 # in the GitHub repository.
@@ -85,7 +90,7 @@
 ############################################################
 cat("\n================================================================================\n")
 cat(" SCOPE: Symmetric COvariance Population Estimator\n")
-cat(" Version 1.0.0\n")
+cat(" Version 1.0.1\n")
 cat(" Author : Alister W. Graham (2026)\n")
 cat(" GitHub : https://github.com/A-Graham/SCOPE\n")
 cat("================================================================================\n")
